@@ -9,7 +9,6 @@ class ObjectRenderer:
         self.wall_textures = self.load_wall_textures()
         self.sky_image = self.get_texture('resources/textures/sky.png', (WIDTH, HALF_HEIGHT))
         self.sky_offset = 0
-        self.digits = dict(zip(map(str, range(11)), self.digit_images))
        
 
     def draw(self):
