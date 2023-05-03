@@ -63,6 +63,8 @@ class Player:
         scale = PLAYER_SIZE_SCALE / self.game.delta_time
         if self.check_wall(int(self.x + dx * scale), int(self.y)):
             self.x += dx
+        #else:
+            #print(self.game.map.world_map[int(self.x + dx * scale)][int(self.y)])
         if self.check_wall(int(self.x), int(self.y + dy * scale)):
             self.y += dy
 
